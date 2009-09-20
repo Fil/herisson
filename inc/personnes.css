@@ -1,0 +1,182 @@
+/* ------------------------------------------
+/* couleurs : http://kuler.adobe.com/#themeID/316039
+/* ------------------------------------------ */
+
+@font-face { 			
+			font-family:coolvetica;
+			src:url(coolvetica.ttf);
+			format("truetype");
+			font-weight: bold;
+			}
+
+body {
+ margin: 0px auto;
+ width: 800px;
+ color: #000;
+ background: #fddfb5;
+ font-family: helvetica, helvetica neue, arial, sans-serif;
+}
+
+img { border: 0 }
+
+a { color: #422; text-decoration: underline; }
+#page a { color: #D8805A; text-decoration: none; }
+#page a:hover { color: #E34616;}
+
+#page {
+	color: #eee;
+	background: #561002;
+	min-height: 450px;
+	padding: 30px;
+}
+
+#header {
+width:480px;
+float:left;
+}
+
+#slogan {
+font-size: smaller;
+}
+
+.marge { width: 230px; float: right; text-align: right; }
+
+.you {
+	text-align: left;
+	font-size: 0.75em;
+	padding-bottom: 1em;
+	border-bottom: dashed 1px #fddfb5;
+}
+
+.you input  {
+margin-top:.4em;
+}
+
+#avatar {
+height: 260px;
+}
+
+#main {
+	width: 480px;
+	float:left;
+	clear:none;}
+
+h1, h2, h3, h4 {
+font-family: coolvetica, helvetica, helvetica neue, arial, sans-serif;
+font-weight:bold;
+}
+
+h3 {
+font-size: 1.6em;
+margin-bottom:.5em;
+}
+
+h1.fn {
+font-size: 3em;
+margin-bottom: 15px;
+line-height:1em;
+padding-bottom:10px;
+border-bottom: dashed 1px #fddfb5;
+text-shadow: 3px 3px 7px #430b00;
+}
+
+#friends {
+width:480px;
+}
+
+#friends h3 {
+padding-top: 20px;
+font-size: 1.3em;
+margin-bottom:.5em;
+}
+
+#friends ul {
+margin: 0;
+padding-left:17px;
+}
+
+#friends li {
+	padding-right:20px;
+	width: 134px;
+	float: left;
+	font-size: 0.95em;
+	list-style-image:url('carre.gif');
+	list-style-type:square;
+}
+
+li {
+	list-style-type: square;
+	list-style-image:url('carre.gif');
+	padding-bottom: 3px;
+}
+
+.recents {
+	text-align: left;
+	background: #FDDFB5 url('margeinnershadow.gif') no-repeat top left;
+	margin-top: 30px;
+	padding:15px 10px 12px 10px;
+	color: #561002;
+}
+
+
+
+.recents h4 {
+	font-size:1.2em;
+	margin-top:0;
+	margin-bottom:-10px;
+	padding-left:10px;
+}
+.recents ul {
+	padding-left: 10px;
+	margin-bottom:0px;
+}
+.recents ul li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#permalink {
+	clear: both;
+	text-align: center;
+	padding-top: 80px;
+	font-size: small;
+}
+#permalink a {
+	font-family: monospace;
+}
+
+#footer {
+	clear: both;
+	padding-bottom: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+
+#info {
+	font-size: 0.85em;
+}
+
+/* rezo */
+#info h5 { display: none; }
+
+#info .introduction img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+#letter {
+	padding: 10px 20px 35px 20px;
+	margin-bottom:20px;
+	background: #E34616 url('mainshadow.gif') no-repeat bottom left;
+}
+
+#letter p {
+	margin: 5px 0 10px 0;
+}
+
+#qrcode {
+	margin:10px;
+}
+

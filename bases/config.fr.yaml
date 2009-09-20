@@ -1,0 +1,56 @@
+### Configuration pour per.sonn.es
+#
+# fichier de configuration au format YAML
+#
+slogan: "Aucune information, mais sur tout le monde"
+vousaussi: "Vous aussi, vous êtes une per.sonn.es !"
+votrenom: "Votre nom"
+chercher: "Chercher"
+permalien: "Lien permanent pour la page de @nom@ :"
+permaliencourt: "Lien permanent :"
+newmembers: "Nouveaux membres :"
+monanniv: "C’est mon anniversaire aujourd’hui !"
+bonanniv: "Bon anniversaire à :"
+jai_age_an: "j’ai @age@ ans."
+neele: "née le @date@"
+nele: "né le @date@"
+mapensee: "Ma pensée du moment :"
+moninfo: "Mon info :"
+lesnamisdex: "les @num@ amis @deoudapo@@name@ :"
+annees: ans
+formatheure: 'H\hi'
+jhabite: "j’habite à"
+pied: |
+    per.sonn.es est le premier site de réseau social entièrement fictif d’Internet<br />aucun des éléments affichés sur ce site n’est personnel<br /><a href="http://zzz.rezo.net/-per-sonn-es-.html" target="_blank">en savoir plus<\/a> • <a href="http://spreadsheets.google.com/viewform?formkey=cjNxY2FuUUllVllleWlfZ0J3Q2puNWc6MA.." target="_blank">contribuer<\/a> • <a href="http://fakefriends.me/@nom@">In English<\/a> • <a href="http://zzz.rezo.net/L-API-de-per-sonn-es.html">API<\/a>
+parauteur: par
+
+# Sites référencés pour "mon info"
+sites:
+  - http://rezo.net/backend/
+  - http://cuisine-libre.fr/spip.php?page=backend
+  - http://feeds.feedburner.com/viedemerde
+  - http://www.entrailles.fr/index.php?feed/atom
+  - http://www.viedenerd.fr/feed/atom/
+
+
+# Home page
+home:
+  titre: per.sonn.es
+  title: "Bienvenue chez per.sonn.es"
+  statut: |
+    <ul><li>Breaking news: <code>per.sonn.es</code> recrute des développeurs pour son rayonnement à l'international. <a href="http://zzz.rezo.net/-per-sonn-es-">Faire offre</a>.</li></ul>
+  info: |
+    <div id="letter">
+    <h2>Un nouveau concept de réseau social</h2>
+    <p>Salut,</p>
+    <p>énorme succès, alors que le lancement n'est pas encore officiel
+    <br />
+    déjà @inscrits@ membres !</p>
+    <p>il est encore temps de rejoindre le réseau <code>per.sonn.es</code></p>
+    <p>à moins que tu n'y sois déjà ?</p>
+    <p><code>$site</code>, c'est un nouveau concept de réseau social</p>
+    <p style="text-align:right;">à bientôt</p>
+    </div>
+    <object width="478" height="348"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3999233&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=3999233&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="478" height="348"></embed></object>
+    <p style="text-align:center;"><a href="http://vimeo.com/3999233">Tout devient clair avec ce film</a> réalisé par <a href="http://vimeo.com/user1462805">gud woman</a>.</p>
+

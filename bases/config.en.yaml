@@ -1,0 +1,31 @@
+### Configuration for fakefriends.me
+#
+# in YAML format
+#
+slogan: 'No information &mdash; on everyone'
+vousaussi: "You&#8217re a fake friend too!"
+votrenom: "Your Name"
+chercher: Search
+permalien: "Permalink for @nom@&#8217s page:"
+permaliencourt: "Permalink for this page:"
+newmembers: "They just joined:"
+monanniv: "It&#8217s my birthday today!"
+bonanniv: "Happy Birthday to:"
+jai_age_an: "I&#8217m @age@ years old."
+neele: nele: "Born @date@"
+mapensee: "My thoughts:"
+moninfo: "My info:"
+lesnamisdex: "@name@&#8217s @num@ friends:"
+annees: years
+formatheure: H:i
+jhabite: "I live in"
+pied: |
+  fakefriends.me is the first fake social network on the internet<br />none of the data is personal<br /><a href="http://spreadsheets.google.com/viewform?formkey=dFZELW1xSHdJc09hOWFRU1ZETTA4Mmc6MA.." target="_blank">participate<\/a> &#8226 <a href="http://per.sonn.es/@nom@">en fran&#231ais<\/a>
+parauteur: by
+
+# Sites for "my info"
+sites:
+  - http://rezo.net/backend/anglais
+  - http://blog.foodista.com/feed/
+  - http://feeds2.feedburner.com/fmylife
+

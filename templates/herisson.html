@@ -1,0 +1,104 @@
+<?php
+
+if (!defined('HERISSON')) exit;
+include 'herisson_fonctions.php';
+
+$slogan = str_replace("'", "\\'", trim($slogan));
+$pied = str_replace("'", "\\'", trim($pied));
+
+echo <<<TMPL
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head profile="http://gmpg.org/xfn/11">
+	<title>$title</title>
+
+<link rel="stylesheet" type="text/css" href="inc/personnes.css" media="all" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="$link.rdf" />
+
+<script type="text/javascript" src="inc/jquery.js"></script>
+<script type="text/javascript">
+
+  $(function() {
+
+	$("#slogan")
+	.html('$slogan');
+
+	$('#footer')
+	.html('$pied');
+    });
+  	$flickrscript
+</script>
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+
+<a href="./"><img src="inc/logo.$lang.gif" alt="$site" /></a>
+
+<div id="page" class="vcard">
+
+
+<div id="header">
+<div id="slogan"></div>
+
+<h1 class="fn">$titre</h1>
+</div>
+
+<div class="marge">
+
+<div class="you">
+<form action="./" method="post">
+<label for="nom">$vousaussi</label><br />
+<input id="nom" name="nom" value="$votrenom" onfocus="$(this).attr('value', '');" type="text" />
+<input name="ok" value="$chercher" type="submit" />
+</form></div>
+
+$age
+$metier
+$geographie
+$avatar
+
+</div>
+
+<div id="main">
+
+$statut
+
+<div id="info">$info</div>
+
+
+<div id="friends">
+$myfriends
+<div style="clear:both;"></div>
+
+</div>
+</div>
+
+
+
+<div class="marge">
+
+
+<div class="recents">$recents</div>
+<div class="recents">$anniv</div>
+
+
+</div>
+
+
+
+<div id="permalink">$permalink</div>
+
+
+
+</div>
+<img src="inc/bottomshadow.gif" alt="" />
+
+<div id="footer"></div>
+
+$analytics
+
+</body>
+</html>
+TMPL;

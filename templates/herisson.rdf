@@ -1,0 +1,55 @@
+<?php
+
+	if (!defined('HERISSON')) exit;
+
+	echo '<'.'?xml version="1.0"?'.'>';
+	echo "
+<rdf:RDF
+ xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+ xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+ xmlns:foaf='http://xmlns.com/foaf/0.1/'
+>
+<foaf:Person>
+<foaf:name>$nom</foaf:name>
+<foaf:homepage rdf:resource=\""
+	.'http://'.$site.'/'.str_replace(' ', '+', $user['name'])
+."\"/>
+";
+
+## non standardise ??
+if (isset($user['job']))
+	echo "<foaf:occupation>".$user['job']."</foaf:occupation>\n";
+
+## .plan 
+if (isset($user['status']))
+	echo "<foaf:plan>".$user['status']."</foaf:plan>\n";
+
+## sexe (M/F seulement [TODO])
+switch ($user['sex']) {
+	case 'M':
+		echo "<foaf:gender>male</foaf:gender>\n";
+		break;
+	case 'F':
+		echo "<foaf:gender>female</foaf:gender>\n";
+		break;
+}
+
+foreach ($user['friends'] as $friend) {
+	$home = "http://".$site.'/'.str_replace(' ', '+', $friend);
+	echo "
+<!-- friend -->
+<foaf:knows>
+<foaf:Person>
+<foaf:name>$friend</foaf:name>
+<foaf:homepage rdf:resource=\"$home\"/>
+<rdfs:seeAlso rdf:resource=\"$home.rdf\" />
+</foaf:Person>
+</foaf:knows>
+";
+}
+
+
+echo "
+</foaf:Person>
+</rdf:RDF>
+";

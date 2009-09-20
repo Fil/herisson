@@ -34,18 +34,19 @@ if (preg_match(',^noexist_,i', $nom)) {
 
 # config
 switch($_SERVER['HTTP_HOST']) {
-	case 'localhost':
 	case 'per.sonn.es':
 		$lang = 'fr';
 		$site = 'per.sonn.es';
-		loadfrom('config');
 		break;
 	default:
+	case 'localhost':
 	case 'fakefriends.me':
 		$lang = 'en';
 		$site = 'fakefriends.me';
 		break;
 }
+
+loadfrom('config');
 
 # add your own analytics file if you want
 $analytics = @file_get_contents('inc/analytics.'.$lang.'.js');

@@ -254,7 +254,6 @@ function get_personne($nom) {
 	
 	// geographie
 	if (
-	$lang == 'fr' AND
 	$geo = takefrom('cities', 'region/'.$code, array('key' => true))
 	AND $region = array_pop(array_keys($geo))
 	AND $ville = $geo[$region][counter('ville/'.$code, count($geo[$region]))])

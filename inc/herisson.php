@@ -259,5 +259,12 @@ function get_personne($nom) {
 	AND $ville = $geo[$region][counter('ville/'.$code, count($geo[$region]))])
 		$user['city'] = "$ville ($region)";
 
+
+	// phobies
+	if (counter('phobia/'.$code, 5) == 1) {
+		$user['phobia'] = takefrom('phobia', 'phobia/'.$code);
+	}
+
 	return $user;
+
 }

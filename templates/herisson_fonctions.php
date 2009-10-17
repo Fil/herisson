@@ -83,6 +83,12 @@ if (isset($user['name'])) {
 	else
 		$geographie = '';
 
+	# phobie
+	if (isset($user['phobia']))
+		$phobia = '<p>'.$phobia.' '.$user['phobia'].'</p>';
+	else
+		$phobia = '';
+
 	list($prenom) = explode(' ', $user['name']);
 
 	if ($user['friends']) {
@@ -111,6 +117,7 @@ else {
 	$geographie = '';
 	$flickrpic = '';
 	$myfriends = '';
+	$phobia = '';
 }
 
 

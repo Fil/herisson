@@ -84,9 +84,12 @@ if (isset($user['name'])) {
 		$geographie = '';
 
 	# phobie
-	if (isset($user['phobia']))
-		$phobia = '<p>'.$phobia.' '.$user['phobia'].'</p>';
-	else
+	if (isset($user['phobia'])) {
+		$url_chance = "http://www.google.com/search?btnI=I'm%20feeling%20lucky&amp;q="
+		. urlencode($user['phobia']);
+		$phobia = '<p>'.$phobia.' <a href="'.$url_chance.'">'
+			.$user['phobia'].'</a></p>';
+	} else
 		$phobia = '';
 
 	list($prenom) = explode(' ', $user['name']);

@@ -3,6 +3,8 @@
 define('HERISSON', 1);
 require 'inc/herisson.php';
 
+include 'inc/source.php';  # definir la source de trafic
+
 # s'il y a un POST on enregistre le nom en cookie et on redirecte
 # On n'utilise pas $_SESSION car on ne veut aucune donnee sur le serveur
 if (isset($_POST['nom'])) {

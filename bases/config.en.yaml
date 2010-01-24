@@ -52,3 +52,8 @@ home:
     <object width="478" height="348"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3999233&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=3999233&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="478" height="348"></embed></object>
     <p style="text-align:center;"><a href="http://vimeo.com/3999233">Everything is obvious with this film</a> by <a href="http://vimeo.com/user1462805">gud woman</a>.</p>
 
+# domaines
+domain:
+    fr: 'per.sonn.es'
+    en: 'fakefriends.me'
+

@@ -217,6 +217,13 @@ function get_personne($nom) {
 	// on verifie qu'il n'y a pas de doublon
 	$user['friends'] = array_values(array_unique($user['friends']));
 
+	// on calcule la langue de chaque ami
+	require_once 'lib/lang_detect.php';
+	foreach($user['friends'] as $i => $f)
+		$l[$i] = probable_lang($f);
+
+	if ($l)
+		$user['friends_lang'] = $l;
 
 	// status
 	$n = counter('pensees/'.$code, 3);

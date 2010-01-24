@@ -102,9 +102,17 @@ if (isset($user['name'])) {
 			. str_replace(array('@num@', '@name@', '@deoudapo@'), array($numfriends, $prenom, $deoudapo),
 			$lesnamisdex)."</h4>"
 			."<ul>";
-			foreach ($user['friends'] as $friend)
-				$myfriends .= '<li><a href="'.urlencode($friend).'">'
-					. $friend ."</a></li>\n";
+
+			foreach ($user['friends'] as $i => $friend) {
+				if ($user['friends_lang'][$i] !== $lang) {
+					$dom = 'http://'.$domain[$user['friends_lang'][$i]].'/';
+					$hreflang = " hreflang='".$user['friends_lang'][$i]."'";
+				} else
+					$dom = $hreflang = '';
+				$myfriends .= '<li><a href="'.$dom.urlencode($friend).'"'
+					. $hreflang.'>' . $friend ."</a></li>\n";
+			}
+
 			$myfriends .= "</ul>\n";
 	} else
 		$numfriends = 0;

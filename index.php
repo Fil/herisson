@@ -36,12 +36,12 @@ if (preg_match(',^noexist_,i', $nom)) {
 
 # config
 switch($_SERVER['HTTP_HOST']) {
+	case 'localhost':
 	case 'per.sonn.es':
 		$lang = 'fr';
 		$site = 'per.sonn.es';
 		break;
 	default:
-	case 'localhost':
 	case 'fakefriends.me':
 		$lang = 'en';
 		$site = 'fakefriends.me';

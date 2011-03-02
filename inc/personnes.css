@@ -41,6 +41,8 @@ font-size: smaller;
 
 .marge { width: 230px; float: right; text-align: right; }
 
+.marge2 { clear: both; }
+
 .you {
 	text-align: left;
 	font-size: 0.75em;
@@ -113,9 +115,9 @@ li {
 .recents {
 	text-align: left;
 	background: #FDDFB5 url('margeinnershadow.gif') no-repeat top left;
-	margin-top: 30px;
 	padding:15px 10px 12px 10px;
 	color: #561002;
+	margin:60px 20px 0 0;  width: 210px; float: left;
 }
 
 

@@ -13,3 +13,4 @@ RewriteRule "." - [skip=100]
 
 
 RewriteRule ^[^/]+$ index.php [QSA,L]
+

@@ -48,6 +48,20 @@ switch($_SERVER['HTTP_HOST']) {
 		break;
 }
 
+# bloquer s'il y a censure
+# http://www.tbray.org/tmp/draft-tbray-http-legally-restricted-status.html
+$robots = @file_get_contents('robots.txt');
+if (preg_match(',^Disallow: /'.preg_quote($nom,',').'$,uims',
+urldecode($robots))) {
+	header("HTTP/1.0 451 Unavailable For Legal Reasons");
+	header("Status: 451 Unavailable For Legal Reasons");
+	$nom = ($lang == 'en')
+		? 'Page Unavailable'
+		: 'Page non disponible';
+		
+}
+
+
 loadfrom('config');
 
 # add your own analytics file if you want

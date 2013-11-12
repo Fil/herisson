@@ -219,6 +219,7 @@ function get_personne($nom) {
 
 	// on calcule la langue de chaque ami
 	require_once 'lib/lang_detect.php';
+	$l = array();
 	foreach($user['friends'] as $i => $f)
 		$l[$i] = probable_lang($f);
 

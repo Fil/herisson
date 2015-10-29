@@ -30,11 +30,9 @@ sites:
   - http://rezo.net/backend/
   - http://www.cuisine-libre.fr/spip.php?page=backend
   - http://brutalimentation.ca/feed/
-  - http://petiteracine.over-blog.com/rss-articles.xml
-  - http://feeds.feedburner.com/viedemerde
-  - http://www.entrailles.fr/index.php?feed/atom
-  - http://www.viedenerd.fr/feed/atom/
-
+  - http://petiteracine.net/wordpress/feed/
+  - http://visionscarto.net/spip.php?page=backend
+  - http://blog.entrailles.fr/feed/
 
 # Home page
 home:
